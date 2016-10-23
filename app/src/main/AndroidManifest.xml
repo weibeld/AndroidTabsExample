@@ -4,7 +4,7 @@
 
     <!--
       If using a Toolbar as the activities' app bars (instead of the default ActionBar), must use
-      a theme inherting from Theme.AppCompat.*.NoActionBar. This prevents the default ActionBar
+      a theme inheriting from Theme.AppCompat.*.NoActionBar. This prevents the default ActionBar
       from showing up.
     -->
     <application
