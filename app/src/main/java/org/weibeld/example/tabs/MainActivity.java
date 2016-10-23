@@ -14,6 +14,13 @@ public class MainActivity extends AppCompatActivity {
 
     private final String LOG_TAG = MainActivity.class.getSimpleName();
 
+    // Titles of the individual pages (displayed in tabs)
+    private final String[] PAGE_TITLES = new String[] {
+            "Page 1",
+            "Page 2",
+            "Page 3"
+    };
+
     // The fragments that are used as the individual pages
     private final Fragment[] PAGES = new Fragment[] {
             new Page1Fragment(),
@@ -55,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public int getCount() {
             return PAGES.length;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return PAGE_TITLES[position];
         }
 
     }
