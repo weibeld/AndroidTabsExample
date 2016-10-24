@@ -75,6 +75,8 @@ The swipe views architecture is illustrated below:
 
 ![Swipe Views Architecture](README_res/swipe_views.png)
 
+See branches [01_swipe_views_and_actionbar](https://github.com/weibeld/AndroidTabsExample/tree/01_swipe_views_and_actionbar) and [04_swipe_views_and_toolbar](https://github.com/weibeld/AndroidTabsExample/tree/04_swipe_views_and_toolbar) for code examples.
+
 **References:**
 
 - https://developer.android.com/training/implementing-navigation/lateral.html#horizontal-paging
@@ -108,6 +110,8 @@ dependencies {
 }
 ```
 
+See branches [06_tablayout_tabs_fixed_and_toolbar](https://github.com/weibeld/AndroidTabsExample/tree/06_tablayout_tabs_fixed_and_toolbar) and [07_tablayout_tabs_scrollable_and_toolbar](https://github.com/weibeld/AndroidTabsExample/tree/07_tablayout_tabs_scrollable_and_toolbar) for code examples.
+
 **References:**
 
 - https://developer.android.com/reference/android/support/design/widget/TabLayout.html
@@ -133,11 +137,8 @@ If the tabs are used in combination with swipe views (see [above](#swipe-views))
 
 This ensures that when the user clicks on a tab, the ViewPager switches to the corresponding page (1), and vice versa, when the user swipes to another page, the corresponding tab is selected in the ActionBar (2).
 
+See branch [03_actionbar_tabs_DEPRECATED](https://github.com/weibeld/AndroidTabsExample/tree/03_actionbar_tabs_DEPRECATED) for code examples.
+
 **References:**
 
 - https://developer.android.com/training/implementing-navigation/lateral.html#tabs
-
-
-
-
-
