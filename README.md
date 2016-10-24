@@ -85,10 +85,10 @@ The swipe views architecture is illustrated below:
 Tabs
 ----
 
-There are currently two ways to implement a tabs navigation pattern in Android:
+There are currently two ways to implement a tabs UI element in Android:
 
-1. TabLayout tabs using [TabLayout](https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_TABS) from the [*Design Support Library*](https://guides.codepath.com/android/Design-Support-Library)
-2. ActionBar tabs using the ActionBar's [NAVIGATION_MODE_TABS](https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_TABS) feature **(DEPRECATED)**
+1. **TabLayout tabs** using [TabLayout](https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_TABS) from the [*Design Support Library*](https://guides.codepath.com/android/Design-Support-Library)
+2. **ActionBar tabs** using the ActionBar's [NAVIGATION_MODE_TABS](https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_TABS) feature **(DEPRECATED)**
 
 
 ### TabLayout Tabs
