@@ -12,13 +12,14 @@ Table of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [Usage](#usage)
-- [Contents](#contents)
-- [Introduction](#introduction)
+- [Branches](#branches)
+- [Basics](#basics)
 - [Swipe Views](#swipe-views)
 - [Tabs](#tabs)
-  - [ActionBar Tabs](#actionbar-tabs)
   - [TabLayout Tabs](#tablayout-tabs)
+  - [ActionBar Tabs](#actionbar-tabs)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -34,11 +35,20 @@ Usage
 Branches
 --------
 
+Each branch contains a fully working configuration:
+
+- [01_swipe_views_and_actionbar](https://github.com/weibeld/AndroidTabsExample/tree/01_swipe_views_and_actionbar):
+ActionBar as app bar, ViewPager (swipe views), no tabs
+- [02_swipe_views_and_pagertitlestrip_and_actionbar](https://github.com/weibeld/AndroidTabsExample/tree/02_swipe_views_and_pagertitlestrip_and_actionbar): ActionBar as app bar, ViewPager (swipe views) with PagerTitleStrip (titles of current, previous, and next page), no tabs
+- [03_actionbar_tabs_DEPRECATED](https://github.com/weibeld/AndroidTabsExample/tree/03_actionbar_tabs_DEPRECATED): ActionBar as app bar, ViewPager (swipe views), **ActionBar tabs** (combined with ViewPager)
+- [04_swipe_views_and_toolbar](https://github.com/weibeld/AndroidTabsExample/tree/04_swipe_views_and_toolbar): Toolbar as app bar, ViewPager (swipe views), no tabs
+- [05_swipe_views_and_pagertitlestrip_and_toolbar](https://github.com/weibeld/AndroidTabsExample/tree/05_swipe_views_and_pagertitlestrip_and_toolbar): Toolbar as app bar, ViewPager (swipe views) with PagerTitleStrip (titles of current, previous, and next page), no tabs
+- [06_tablayout_tabs_fixed_and_toolbar](https://github.com/weibeld/AndroidTabsExample/tree/06_tablayout_tabs_fixed_and_toolbar): Toolbar as app bar, ViewPager (swipe views), **fixed TabLayout tabs** (combined with ViewPager)
+- [07_tablayout_tabs_scrollable_and_toolbar](https://github.com/weibeld/AndroidTabsExample/tree/07_tablayout_tabs_scrollable_and_toolbar): Toolbar as app bar, ViewPager (swipe views), **scrollable TabLayout tabs** (combined with ViewPager)
 
 
-
-Introduction
-------------
+Basics
+------
 
 Typically, an implementation of tabs in Android consists of:
 
@@ -47,7 +57,7 @@ Typically, an implementation of tabs in Android consists of:
 
 These are two independent navigation patterns, but they can be combined with each other.
 
-In general: *swipe views can (but don't need to) be combined with tabs* and *tabs can (but don't need to) be combined with swipe views*. However, tabs benefit tremendously from being combined with swipe views, as is explained below.
+In general: swipe views *can (but don't need to)* be combined with tabs, and tabs *can (but don't need to)* be combined with swipe views. However, tabs benefit tremendously from being combined with swipe views, as explained below.
 
 
 Swipe Views
