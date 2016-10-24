@@ -73,7 +73,7 @@ Combined with tabs, this allows the user to switch to the next or previous tab b
 
 The swipe views architecture is illustrated below:
 
-![Swipe Views Implementation](README_res/swipe_views.png)
+![Swipe Views Architecture](README_res/swipe_views.png)
 
 **References:**
 
@@ -87,7 +87,7 @@ Tabs
 
 There are currently two ways to implement a tabs UI element in Android:
 
-1. **TabLayout tabs** using [TabLayout](https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_TABS) from the [*Design Support Library*](https://guides.codepath.com/android/Design-Support-Library)
+1. **TabLayout tabs** using [TabLayout](https://developer.android.com/reference/android/support/design/widget/TabLayout.html) from the [*Design Support Library*](https://guides.codepath.com/android/Design-Support-Library)
 2. **ActionBar tabs** using the ActionBar's [NAVIGATION_MODE_TABS](https://developer.android.com/reference/android/app/ActionBar.html#NAVIGATION_MODE_TABS) feature **(DEPRECATED)**
 
 
@@ -131,7 +131,7 @@ If the tabs are used in combination with swipe views (see [above](#swipe-views))
 1. In [onTabSelected](https://developer.android.com/reference/android/app/ActionBar.TabListener.html#onTabSelected(android.app.ActionBar.Tab, android.app.FragmentTransaction)) of the ActionBar.TabListener, update the current page of the ViewPager ([setCurrentItem](https://developer.android.com/reference/android/support/v4/view/ViewPager.html#setCurrentItem(int)))
 2. Implement a [ViewPager.SimpleOnPageChangeListener](https://developer.android.com/reference/android/support/v4/view/ViewPager.SimpleOnPageChangeListener.html), and in its [onPageSelected](https://developer.android.com/reference/android/support/v4/view/ViewPager.SimpleOnPageChangeListener.html#onPageSelected(int)) method update the current tab of the ActionBar ([setSelectedNavigationItem](https://developer.android.com/reference/android/app/ActionBar.html#setSelectedNavigationItem(int)))
 
-This ensures that when the user clicks on a tab, the ViewPager switches to the corresponding page (1), and vice versa, when the user swipes to another page, the corresponding tab is selected in the ActionBar.
+This ensures that when the user clicks on a tab, the ViewPager switches to the corresponding page (1), and vice versa, when the user swipes to another page, the corresponding tab is selected in the ActionBar (2).
 
 **References:**
 
